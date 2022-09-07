@@ -5,11 +5,15 @@
 Pycraft is an OpenGL, open world, video game made entirely with Python. This project is a game to shed some light on OpenGL programming in Python as it is a seldom touched area of Python's vast amount of uses. Feel free to give this project a run, and message us if you have any feedback! <br />
 Made with Python 3 64-bit and Microsoft Visual Studio Code.
 
+### THIS IS A ROUGH EARLY PREVIEW OF PYCRAFT v0.9.6-2.5 THIS IS AS A BACKUP FPOR CODE AS WE BEGIN TO MAKE SIGNIFICANT CHANGES TO CLEAN UP THE GAME ENGINE, YOU CAN USE THIS TO TRY DIFFERENT GAME ENGINE REVISIONS BUT SOME AMOUNT OF PROGRAMMING WOULD BE REQUIRED AND THERE IS NO GUARANTEE THAT THIS WILL IN ANY WAY WORK.
+
 [![](https://img.shields.io/badge/python-3.10-blue.svg)](www.python.org/downloads/release/python-3100) [![](https://img.shields.io/badge/python-3.9-blue.svg)](www.python.org/downloads/release/python-390) [![](https://img.shields.io/badge/python-3.8-blue.svg)](www.python.org/downloads/release/python-380) [![](https://img.shields.io/badge/python-3.7-blue.svg)](www.python.org/downloads/release/python-370) <br />
 ![](https://img.shields.io/github/license/PycraftDeveloper/Pycraft) ![](https://img.shields.io/github/stars/PycraftDeveloper/Pycraft) ![](https://img.shields.io/github/forks/PycraftDeveloper/Pycraft) ![](https://img.shields.io/github/issues/PycraftDeveloper/Pycraft) ![GitHub all releases](https://img.shields.io/github/downloads/PycraftDeveloper/Pycraft/total) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/PycraftDeveloper/Pycraft) ![](https://img.shields.io/pypi/wheel/python-pycraft) ![GitHub repo size](https://img.shields.io/github/repo-size/PycraftDeveloper/Pycraft) ![Discord](https://img.shields.io/discord/929750166255321138)
 
 ## Contents
 This is a guide of where some of the sections of this README have gone, as well as useful links to other documents.
+
+Links back to Pycraft:
 
 > * [About](https://github.com/PycraftDeveloper/Pycraft#about)
 > * [Preview Video](https://youtu.be/shAprkrcaiI)
@@ -21,7 +25,6 @@ This is a guide of where some of the sections of this README have gone, as well 
 > * [Running The Program](https://github.com/PycraftDeveloper/Pycraft#running-the-program)
 > * [Credits](https://github.com/PycraftDeveloper/Pycraft#credits)
 > * [Uncompiled Pycraft Dependancies](https://github.com/PycraftDeveloper/Pycraft#uncompiled-pycraft-dependencies-)
-> * [Changes](https://github.com/PycraftDeveloper/Pycraft/tree/Pycraft-v0.9.6-0#changes)
 > * [Understanding the Release Notes](https://github.com/PycraftDeveloper/Pycraft/tree/Pycraft-v0.9.5#understanding-the-release-notes)
 > * [Input Mapping](https://github.com/PycraftDeveloper/Pycraft/tree/Pycraft-v0.9.5#input-mapping)
 > * [Our Update Policy](https://github.com/PycraftDeveloper/Pycraft#our-update-policy)
@@ -170,22 +173,6 @@ pip is usually installed by default when installing Python with most versions.
 
 _Disclaimer; unfortunately, lots of these python modules (first and third party) can require some external modules that will be installed during the installing process of the above modules, unfortunately this makes it really difficult to give credit to those modules, if you have any recommendations, please contact me appropriately._
 
-## Changes
-Pycraft v0.9.6-1 is now live! Here is a list of all the added features to this minor update: <br />
-
-* PEP8: We have tweaked more function, procedure, class and variable names to bring them in line with the PEP8 standard, this is in line with a current project to introduce the PEP8 standards in Pycraft.
-* Feature: We have deprecated numerous variables and keys in save data that were no longer needed.
-* Feature: We have added "Registry.py" to Pycraft that takes charge of initialising a lot of the key variables used throughout Pycraft, shortening the "main.py" module considerably.
-* Feature: We have tweaked and improved file loading in Pycraft so that if your saved data has readable keys, we can recover those without resetting everything in the save.
-* Feature: We have tweaked the sequence of GUIs that appear on start-up to make them make more sense, putting the start-up animation before the theme selector menu.
-* Feature: We have added the theme selection menu and start-up animation into the core 2D display functionality module with means that we can more easily tweak them later on if we need to.
-* Feature: We have improved in-game events, especially focused on movement to make them shorter and more user friendly.
-* Feature: We have altered the jump animation for Pycraft to make it more realistic. We have also re-added the ability to hold the space bar to continuously jump.
-* Feature: We have made several improvements to the joystick control in game, fixing bugs and allowing for better menu navigation and mouse control. We have also made freeing the mouse from Pycraft easier.
-* Feature: We have consolidated some of the threads in Pycraft to make it less complex and easier to use.
-
-Again, feedback would be much appreciated this update was released on; 14/08/2022 (UK date; DD/MM/YYYY). As always, we hope you enjoy this new release and feel free to leave feedback.
-
 ## Understanding the release notes
 This section will hopefully provide additional information on helping to read the release notes. Points detailed after the "Feature" tag are what was focused on in the update and will likely always be present in each update, often this is the most significant area of the update. Points detailed after the "Bug-Fix" tag are likely to be the most frequent, they outline the most major bugs that have been fixed in this update, although they are not the only bugs that have been fixed. Points detailed after the "Performance" tag are used where there have been significant performance improvements to the project. Points detailed after the "Identified-Bugs" tag are bugs that have been identified in the project and that haven't been fixed as of writing the release notes, these are significant issues and will be fixed as soon as possible. Points detailed after the final "Documentation" tag are indicators of significant improvements to the documentation. The "PEP8" tag is used to signify that significant changes have been made to Pycraft to bring it in line with the PEP8 standards.
 
@@ -209,8 +196,7 @@ This section will be replaced with a dedicated file for keymapping as well as an
 
 ### Controller
 
-* Use the HAT keys (or the 4 buttons typically on the left of the controller in a '+' shape) to navigate between menu options
-* Use the JOYSTICKs for camera panning and in game movement
+* Use the JOYSTICKs for camera panning and in game movement in game, or for mouse control in the 2D engine
 * Use the 'Options' button to enter your inventory
 * Use the 'Share' buttons to enter the map
 * Use the Y or TRIANGLE button to jump in game or exit a GUI (not in game)
